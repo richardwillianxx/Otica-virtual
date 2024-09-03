@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+.body-login {
+    background: linear-gradient(45deg, #202020, #808080);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container-login {
+    background: white;
+    max-width: 450px;
+    width: 90%;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 1rem    ;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 1.5rem; 
+}
+
+.logoVV {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.h2-login {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center; 
+    position: relative;
+}
+
+.h2-login::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    bottom: 3px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    border-radius: 8px;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    align-items: center; 
+}
+
+.input-field-login {
+    position: relative;
+    margin-bottom: 1.5rem;
+    width: 100%; 
+}
+
+.input-field-login input {
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    border: none; 
+    padding: 0.5rem 0;
+}
+
+.input-field-login input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.input-field-login .underline {
+    position: relative;
+}
+
+.input-field-login .underline::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0; 
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.input-field-login .underline::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0; 
+    left: 0;
+    background: linear-gradient(45deg, #202020, #808080);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: left;
+}
+
+.input-field-login input:focus + .underline::after {
+    transform: scaleX(1);
+}
+
+.form-login input[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.4rem;
+    width: 100%;
+    background: linear-gradient(to left, #202020, #808080);
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.form-login input[type="submit"]:hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #202020, #808080);
+}
+
+#icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background: url('../img/icons/olhoA.png');
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-size: cover;
+}
+
+#icon.hide {
+    background: url('../img/icons/olhoF.png');
+    background-size: cover;
+}
+
+@media(max-width:200px){
+    .container-login{
+        padding: 1rem;
+    }
+
+    .form-login input[type="submit"]{
+        padding: 0.3rem;
+    }
+
+    #icon{
+        width: 10px;
+        height: 10px;
+        right: 5px;
+    }
+}
+
+@media(min-width: 1200px){
+    .container-login{
+        max-width: 400px;
+    }
+}
