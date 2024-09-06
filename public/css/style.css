@@ -2272,18 +2272,21 @@ input:-moz-placeholder,
 textarea:-moz-placeholder {
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" ;
 }
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" ;
 }
 
 input::-moz-placeholder,
 textarea::-moz-placeholder {
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" ;
 }
 
 input:-ms-input-placeholder,
@@ -5800,6 +5803,7 @@ textarea:-ms-input-placeholder {
 .shop-bar-area .shop-found-selector select {
   margin-left: 45px;
   -moz-appearance: none;
+  appearance: none;
   background: rgba(0, 0, 0, 0) url("../img/icons/8.png") no-repeat scroll right 0 center;
   border: medium none;
   -webkit-box-shadow: none;
@@ -5921,6 +5925,7 @@ textarea:-ms-input-placeholder {
 
 .shop-bar-area .shop-found-selector select {
   -moz-appearance: none;
+  appearance: none;
   -webkit-appearance: none;
 }
 
