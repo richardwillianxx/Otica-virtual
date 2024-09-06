@@ -79,9 +79,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section_title text-center">
-                        <h2>LATEST EYE GLASSES</h2>
-                        <p>Eye chasmish are very important for thos whos have some difficult in their eye to see every
-                            hing clearly and perfectly</p>
+                        <h2>ÚLTIMOS ÓCULOS</h2>
+                        <p>Óculos de qualidade são essenciais para quem precisa enxergar com clareza e conforto em todas as situações do dia a dia</p>
                     </div>
                 </div>
             </div>
@@ -287,7 +286,7 @@
                 <div class="banner">
                     <div class="thumb">
                         <a href="#">
-                            <img src="img/banner/banner-1.jpg" alt="banner img">
+                            <img src="img/banner/img1Promo.svg" alt="banner img">
                         </a>
                     </div>
                 </div>
@@ -297,7 +296,7 @@
                 <div class="banner">
                     <div class="thumb">
                         <a href="#">
-                            <img src="img/banner/banner-2.jpg" alt="banner img">
+                            <img src="img/banner/img2Promo.svg" alt="banner img">
                         </a>
                     </div>
                 </div>
@@ -307,7 +306,7 @@
                 <div class="banner">
                     <div class="thumb">
                         <a href="#">
-                            <img src="img/banner/banner-3.jpg" alt="banner img">
+                            <img src="img/banner/img3Promo.svg" alt="banner img">
                         </a>
                     </div>
                 </div>
@@ -323,9 +322,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section_title text-center">
-                        <h2>NEW ARRIVLE SUNGLASSES</h2>
-                        <p>Eye chasmish are very important for thos whos have some difficult in their eye to see every
-                            hing clearly and perfectly</p>
+                        <h2>NOVOS ÓCULOS</h2>
+                        <p>A visão perfeita é a chave para uma vida cheia de detalhes e nuances; escolha óculos que acompanhem cada momento com exatidão e estilo</p>
                     </div>
                 </div>
             </div>
@@ -2134,9 +2132,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section_title text-center">
-                        <h2>ALL FEATURED GLASSES</h2>
-                        <p>Eye chasmish are very important for thos whos have some difficult in their eye to see every
-                            hing clearly and perfectly</p>
+                        <h2>TODOS OS ÓCULOS EM DESTAQUE</h2>
+                        <p>Investir em lentes e óculos de qualidade é investir em uma visão mais nítida e confortável, essencial para a sua qualidade de vida</p>
                     </div>
                 </div>
             </div>
@@ -2346,8 +2343,7 @@
                             <img src="img/icons/ship_icon_1.png" alt="icon">
                         </div>
                         <div class="content">
-                            <h3>Free home delivery</h3>
-                            <p>Eye chasmish are very important for thos whos have some difficult</p>
+                            <h3>Entrega gratuita em domicílio</h3>
                         </div>
                     </div>
                 </div>
@@ -2358,8 +2354,7 @@
                             <img src="img/icons/ship_icon_2.png" alt="icon">
                         </div>
                         <div class="content">
-                            <h3>Quality Products</h3>
-                            <p>Eye chasmish are very important for thos whos have some difficult</p>
+                            <h3>Produtos de Qualidade</h3>
                         </div>
                     </div>
                 </div>
@@ -2370,8 +2365,7 @@
                             <img src="img/icons/ship_icon_3.png" alt="icon">
                         </div>
                         <div class="content">
-                            <h3>Gift Voucher</h3>
-                            <p>Eye chasmish are very important for thos whos have some difficult</p>
+                            <h3>Vale-Presente</h3>
                         </div>
                     </div>
                 </div>
@@ -2383,8 +2377,7 @@
                             <img src="img/icons/ship_icon_4.png" alt="icon">
                         </div>
                         <div class="content">
-                            <h3>3 Days easy return</h3>
-                            <p>Eye chasmish are very important for thos whos have some difficult</p>
+                            <h3>Retorno fácil em 3 dias</h3>
                         </div>
                     </div>
                 </div>

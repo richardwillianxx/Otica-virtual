@@ -37,11 +37,11 @@ switch ($routeInfo[0]) {
             DefaultServices::deslogar();
         }
 
-        require_once __DIR__ . '/../App/views/template/header.php';
+        require_once __DIR__ . '/../App/Views/template/header.php';
 
         (new $controller)->$method($vars);
 
-        require_once __DIR__ . '/../App/views/template/footer.php';
+        require_once __DIR__ . '/../App/Views/template/footer.php';
         break;
 
         ob_end_flush();

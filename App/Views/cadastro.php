@@ -39,6 +39,12 @@
                 <div class="underline"></div>
             </div>
 
+            <div class="input-field-cadastro">
+                <input type="password" name="" id="" placeholder="Confirme sua Senha" minlength="8" maxlength="15" required>
+                <div id="icon" onclick="showhide()"></div>
+                <div class="underline"></div>
+            </div>
+
             <input type="submit" value="Cadastrar">
         </form>
     </main>

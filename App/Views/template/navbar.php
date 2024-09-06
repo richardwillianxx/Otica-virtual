@@ -23,7 +23,9 @@
 
                                     <?php else: echo(sprintf("Olá, %s!", htmlspecialchars($_SESSION['nome']))); ?>   
                                     
-                                    <li><form method="post" action="/deslogar"><button type="submit" name="sair">Sair</button></form></li>
+                                    <li><form method="post" action="/deslogar">
+                                         
+                                        <button type="submit" name="sair" aria-label="Sair" class="bntLogOut"><img src="img/icons/logout.svg" alt="Log Out"> </button></form></li>
 
                                     <?php endif ?>
                                     
