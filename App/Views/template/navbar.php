@@ -7,7 +7,7 @@
                 <div class="col-xl-3 col-lg-2 col-4">
                     <div class="logo">
                         <a href="index.html">
-                            <img src="img/logo/logoVV2.png" alt="chasmishco Logo">
+                            <img src="/img/logo/logoVV2.png" alt="chasmishco Logo">
                         </a>
                     </div>
                 </div>
@@ -25,7 +25,7 @@
                                     
                                     <li><form method="post" action="/deslogar">
                                          
-                                        <button type="submit" name="sair" aria-label="Sair" class="bntLogOut"><img src="img/icons/logout.svg" alt="Log Out"> </button></form></li>
+                                        <button type="submit" name="sair" aria-label="Sair" class="bntLogOut"><img src="/img/icons/logout.svg" alt="Log Out"> </button></form></li>
 
                                     <?php endif ?>
                                     
@@ -33,7 +33,7 @@
                             </div>
                             <div class="mini_cat_box">
                                 <div class="shop_cart_icon shop_trigger shopping_basket header-cart">
-                                    <img src="img/icons/icon.png" alt="icons">
+                                    <img src="/img/icons/icon.png" alt="icons">
                                     <span class="shop_count">3</span>
                                     <span class="cart_text"></span>
                                 </div>
@@ -46,7 +46,7 @@
                                         <a href="/">início</a>
                                     </li>
                                     <li class="drop">
-                                        <a href="/mostruario">Compras</a> 
+                                        <a href="/loja">Produtos</a> 
                                     </li>
                                     <li>
                                         <a href="/sobre">Sobre</a>
@@ -60,6 +60,11 @@
                                             <li><a href="/carrinho">carrinho</a></li>
                                             <li><a href="/deslogar">deslogar</a></li>
                                             <li><a href="/pagamento">pagamento</a></li>
+                                            <li><a href="/produtos">Produtos</a></li>
+                                            <li><a href="/individual">PeodutoSolo</a></li>
+                                            <li><a href="/estoques">EStoques    </a></li>
+                                            <li><a href="/clientes">clientes    </a></li>
+                                            
                                         </ul>
                                     </li>
                                     <li>
@@ -142,7 +147,7 @@
         <ul class="mini-cart-products">
             <li>
                 <a class="image">
-                    <img src="img/product/product-1.jpg" alt="Product">
+                    <img src="/img/product/product-1.jpg" alt="Product">
                 </a>
                 <div class="content">
                     <a href="single-product.html" class="title">Simple Silacon Glasses</a>
@@ -155,7 +160,7 @@
             </li>
             <li>
                 <a class="image">
-                    <img src="img/product/product-2.jpg" alt="Product">
+                    <img src="/img/product/product-2.jpg" alt="Product">
                 </a>
                 <div class="content">
                     <a href="single-product.html" class="title">Simple Easin Glasses</a>
@@ -168,7 +173,7 @@
             </li>
             <li>
                 <a class="image">
-                    <img src="img/product/product-3.jpg" alt="Product">
+                    <img src="/img/product/product-3.jpg" alt="Product">
                 </a>
                 <div class="content">
                     <a href="single-product.html" class="title">Simple Macrox Glasses</a>

@@ -1,3 +1,15 @@
+<?php
+
+
+
+
+
+
+
+
+
+?>
+
    <!-- Start Single Product -->
    <div class="gm_single_product pt--100 pb--100 bg--white">
             <div class="container">

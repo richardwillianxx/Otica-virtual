@@ -16,4 +16,11 @@ class Controller {
 
     }
 
+    public function render(string $view, array $data = [])
+    {
+        extract($data);
+
+        return require_once(sprintf('%s/../Views%s', __DIR__, $view));
+    }
+
 }

@@ -1,3 +1,4 @@
+
 <div class="body-login">
 
     <main class="container-login">
@@ -17,7 +18,17 @@
                 <div id="icon" onclick="showhide()"></div>
                 <div class="underline"></div>
             </div>
+
+            <div class="a-login">
+                <a href="recupera.php" class="link-small link-esqueci-senha">Esqueci minha senha</a> 
+
             <input type="submit" value="Entrar">
+
+            <div class="a-login">
+                <span class="link-text">Não possui um cadastro?</span>
+                <a href="cadastro" class="link-small link-cadastrar">Cadastrar-se</a> 
+            </div>
+
         </form>
     </main>
     

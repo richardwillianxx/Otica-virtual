@@ -95,132 +95,7 @@
     </footer>
     <!-- End Footer Area -->
 
-    <!-- Quick View Modal -->
-    <div class="quick-view-modal">
-        <div class="quick-view-modal-inner">
-            <div class="container">
-                <div class="product-details">
-                    <!-- Product Details Left -->
-                    <div class="product-details-left">
-                        <div class="product-details-images slider-navigation-2">
-                            <a href="img/product/sm1.png">
-                                <img src="img/product/big-img.png" alt="product image">
-                            </a>
-                            <a href="img/product/sm2.png">
-                                <img src="img/product/big-img.png" alt="product image">
-                            </a>
-                            <a href="img/product/sm3.png">
-                                <img src="img/product/big-img.png" alt="product image">
-                            </a>
-                            <a href="img/product/sm1.png">
-                                <img src="img/product/big-img.png" alt="product image">
-                            </a>
-                            <a href="img/product/sm1.png">
-                                <img src="img/product/big-img.png" alt="product image">
-                            </a>
-                        </div>
-                        <div class="product-details-thumbs slider-navigation-2">
-                            <img src="img/product/sm1.png" alt="product image thumb">
-                            <img src="img/product/sm2.png" alt="product image thumb">
-                            <img src="img/product/sm3.png" alt="product image thumb">
-                            <img src="img/product/sm1.png" alt="product image thumb">
-                            <img src="img/product/sm1.png" alt="product image thumb">
-                        </div>
-                    </div>
-                    <!--// Product Details Left -->
 
-                    <!-- Product Details Right -->
-                    <div class="product-details-right">
-                        <h5 class="product-title">Aenean Eu Tristique</h5>
-
-                        <div class="ratting-stock-availbility">
-                            <div class="ratting-box">
-                                <span><i class="fa fa-star"></i></span>
-                                <span><i class="fa fa-star"></i></span>
-                                <span><i class="fa fa-star"></i></span>
-                                <span><i class="fa fa-star"></i></span>
-                                <span><i class="fa fa-star"></i></span>
-                            </div>
-                            <span class="stock-available">In stock</span>
-                        </div>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est
-                            tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo
-                            gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.
-                            adipiscing cursus eu, suscipit id nulla.</p>
-
-                        <div class="price-box">
-                            <span class="pricebox-price">£80.00</span>
-                        </div>
-
-                        <div class="product-details-quantity">
-                            <div class="quantity-select">
-                                <div class="pro-quantity">
-                                    <div class="pro-qty"><input type="text" value="1"></div>
-                                </div>
-                            </div>
-                            <a href="#" class="add-to-cart-button">
-                                <span>ADD TO CART</span>
-                            </a>
-                        </div>
-
-                        <div class="product-details-color">
-                            <span>Color :</span>
-                            <ul>
-                                <li class="red"><span></span></li>
-                                <li class="green checked"><span></span></li>
-                                <li class="blue"><span></span></li>
-                                <li class="black"><span></span></li>
-                            </ul>
-                        </div>
-
-                        <div class="product-details-size">
-                            <span>Size :</span>
-                            <ul>
-                                <li class="checked"><span>S</span></li>
-                                <li><span>M</span></li>
-                                <li><span>L</span></li>
-                                <li><span>XL</span></li>
-                                <li><span>XXL</span></li>
-                            </ul>
-                        </div>
-
-                        <div class="product-details-categories">
-                            <span>Categories :</span>
-                            <ul>
-                                <li><a href="shop.html">Accessories</a></li>
-                                <li><a href="shop.html">Kids</a></li>
-                                <li><a href="shop.html">Women</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="product-details-tags">
-                            <span>Tags :</span>
-                            <ul>
-                                <li><a href="shop.html">Electronic</a></li>
-                                <li><a href="shop.html">Television</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="product-details-socialshare">
-                            <span>Share :</span>
-                            <ul>
-                                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!--// Product Details Right -->
-
-                </div>
-            </div>
-        </div>
-        <button class="close-quickview-modal"><i class="fa fa-close"></i></button>
-    </div>
-    <!--// Quick View Modal -->
 </div>
 <!--// Wrapper -->
 
@@ -235,6 +110,9 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
 
 </body>
 </html>

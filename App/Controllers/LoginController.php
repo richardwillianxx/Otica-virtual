@@ -13,11 +13,11 @@ class LoginController extends Controller {
     public $validarLogin = false;
 
     public function index() {
-        return require_once __DIR__ . '/../Views/login.php';
+        return require_once __DIR__ . '/../Views/login/login.php';
     }
 
     public function cadastro() {
-        return require_once __DIR__ . '/../Views/cadastro.php';
+        return require_once __DIR__ . '/../Views/login/cadastro.php';
     }
 
     public function autorizarLogin(){
@@ -59,13 +59,14 @@ class LoginController extends Controller {
             $_POST['telefone'] ??= null;
             $_POST['senha'] ??= null;
             $_POST['usuario'] ??= null;
+            $_POST['cep'] ??= null;
+            $_POST['numero'] ??= null;
 
-            $usuario = Usuario::where('email', $_POST['email'])->first();
+           $usuario = Usuario::where('email', $_POST['email'])->first();
 
             if($usuario){
                 throw new Exception('Email já cadastrado');
             }
-
 
             $usuario = new Usuario();
             $usuario->nome = $_POST['nome'];
@@ -74,6 +75,8 @@ class LoginController extends Controller {
             $usuario->email = $_POST['email'];
             $usuario->telefone = $_POST['telefone'];
             $usuario->senha = sha1(md5($_POST['senha']));
+            $usuario->cep = $_POST['cep'];
+            $usuario->numero = $_POST['numero'];
             $usuario->save();
 
         
@@ -93,6 +96,8 @@ class LoginController extends Controller {
             throw new Exception($e->getMessage());
         }
     }
+
+    
 
 
 }

@@ -6583,7 +6583,7 @@ p.form-messege {
 
 @media only screen and (max-width: 767px) {
   .contact_area .pt--120 {
-    padding-top: 40px;
+    padding-top: 10px;
   }
 }
 
@@ -8210,4 +8210,23 @@ p.form-messege {
 .bntLogOut{
   border: none;
   margin-left: 1.5vh;
+}
+
+.fotos-produtos{
+  width: 8vh;
+  height: 8vh;
+}
+
+.product img{
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#map{
+  height: 400px;
+  width: 100%;
+}
+
+.pt--121{
+  padding-top: 10px !important;
 }

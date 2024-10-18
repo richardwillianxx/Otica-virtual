@@ -1,0 +1,82 @@
+version: "3.3"
+services:
+    # image project
+    arquitetura:
+        build:
+            args:
+                user: richardxx
+                uid: 1000
+            context: ./
+            dockerfile: Dockerfile
+        image: virtual-vision
+        restart: unless-stopped
+        working_dir: /var/www/
+        expose:
+            - 9000
+        volumes:
+            - ./:/var/www
+            - ./docker/php/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+            - ./docker/php/error_reporting.ini:/usr/local/etc/php/conf.d/error_reporting.ini
+            - ./docker/php/custom.ini:/usr/local/etc/php/conf.d/custom.ini
+        depends_on:
+            - redis
+        networks:
+            - arquitetura-network
+
+    # nginx
+    nginx:
+        image: nginx:alpine
+        restart: unless-stopped
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - ./:/var/www
+            - ./docker/nginx:/etc/nginx/conf.d
+        networks:
+            - arquitetura-network
+
+    # db mysql
+    mysql:
+        image: mysql:8.0.31
+        restart: always
+        environment:
+          MYSQL_DATABASE: ${DB_DATABASE}
+          MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+          MYSQL_PASSWORD: ${DB_PASSWORD}
+          MYSQL_USER: ${DB_USERNAME}
+        volumes:
+          - /srv/mysql/virtual-vision/dbdata:/var/lib/mysql
+        ports:
+          - 3306:3306
+        networks:
+          - arquitetura-network
+
+    # phpmyadmin
+    phpmyadmin:
+        depends_on:
+            - mysql
+        image: phpmyadmin/phpmyadmin
+        restart: unless-stopped
+        ports:
+            - '8080:80'
+        environment:
+            PMA_HOST: mysql
+            MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+        networks:
+            - arquitetura-network
+
+    # redis
+    redis:
+        image: redis:latest
+        command: ["redis-server", "--bind", "redis", "--port", "6379", "--appendonly", "yes", "--replica-read-only", "no"]
+        volumes:
+            - ./data/redis:/data
+        ports:
+            - "6379:6379"
+        networks:
+            - arquitetura-network
+
+networks:
+    arquitetura-network:
+        driver: bridge

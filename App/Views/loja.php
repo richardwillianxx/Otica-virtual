@@ -1,4 +1,18 @@
- <!-- Start Shop Area -->
+<?php
+
+use App\Models\Estoque;
+use App\Models\Produto;
+use App\Widgets\BaseWidget;
+
+/**
+ * @see App\Controllers\EstoqueController::formulario()
+ * @var Estoque $estoque
+ * @var Produto[] $produtos
+ */
+
+?>
+
+<!-- Start Shop Area -->
  <div class="shop_area section-ptb-xl bg--white">
             <div class="container">
                 <div class="row">
@@ -104,140 +118,35 @@
 
 								<div class="row single_grid_product tab-pane fade show active" id="tab1" role="tabpanel">
 									<!-- Start Single Product -->
-									<div class="col-lg-6 col-xl-4 col-sm-6 col-12">
-										<div class="product">
-											<div class="thumb">
-												<a href="single-product.html">
-													<img src="img/product/product-1.jpg" alt="product img">
-												</a>
-												<div class="product_action">
-													<h4><a href="single-product.html">Rinosin Glasses</a></h4>
-													<ul class="cart_action">
-														<li><a href="cart.html"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
-														<li><a href="#"><img src="img/icons/compare_icon.png" alt="icons"></a></li>
-														<li><a href="wishlist.html"><img src="img/icons/wishlist_icon.png" alt="icons"></a></li>
-														<li><a title="Quick View" class="quickview" href="#"><img src="img/icons/quick_view.png" alt="icons"></a></li>
-													</ul>
-												</div>
-												<div class="content">
-													<h4><a href="single-product.html">Rinosin Glasses</a></h4>
-													<ul class="price">
-														<li>$35</li>
-														<li class="old-price">$35</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
+                                    <?php foreach($produtos as $produto): ?>
+                                        <div class="col-lg-6 col-xl-4 col-sm-6 col-12">
+                                            <div class="product">
+                                                <div class="thumb">
+                                                    <a href="single-product.html">
+                                                        <img class="img-produto-thumb" src="<?= $produto->foto ?>" alt="product img">
+                                                    </a>
+                                                    <div class="product_action">
+                                                        <h4><a href="single-product.html"><?= $produto->nome ?></a></h4>
+                                                        <ul class="cart_action">
+                                                            <li><a href="cart.html"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
+                                                            <li><a href="#"><img src="img/icons/compare_icon.png" alt="icons"></a></li>
+                                                            <li><a href="wishlist.html"><img src="img/icons/wishlist_icon.png" alt="icons"></a></li>
+                                                            <li><a title="Quick View" class="quickview" href="#"><img src="img/icons/quick_view.png" alt="icons"></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h4><a href="single-product.html"><?= $produto->nome ?></a></h4>
+                                                        <ul class="price">
+                                                            <li>R$<?= $produto->preco ?></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
+
 									<!-- End Single Product -->
-									<!-- Start Single Product -->
-									<div class="col-lg-6 col-xl-4 col-sm-6 col-12">
-										<div class="product">
-											<div class="thumb">
-												<a href="single-product.html">
-													<img src="img/product/product-2.jpg" alt="product img">
-												</a>
-												<div class="product_action">
-													<h4><a href="single-product.html">Bayamo Glasses</a></h4>
-													<ul class="cart_action">
-														<li><a href="cart.html"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
-														<li><a href="#"><img src="img/icons/compare_icon.png" alt="icons"></a></li>
-														<li><a href="wishlist.html"><img src="img/icons/wishlist_icon.png" alt="icons"></a></li>
-														<li><a title="Quick View" class="quickview" href="#"><img src="img/icons/quick_view.png" alt="icons"></a></li>
-													</ul>
-												</div>
-												<div class="content">
-													<h4><a href="single-product.html">Bayamo Glasses</a></h4>
-													<ul class="price">
-														<li>$35</li>
-														<li class="old-price">$35</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single Product -->
-									<!-- Start Single Product -->
-									<div class="col-lg-6 col-xl-4 col-sm-6 col-12">
-										<div class="product">
-											<div class="thumb">
-												<a href="single-product.html">
-													<img src="img/product/product-3.jpg" alt="product img">
-												</a>
-												<div class="product_action">
-													<h4><a href="single-product.html">Easin Glasses</a></h4>
-													<ul class="cart_action">
-														<li><a href="cart.html"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
-														<li><a href="#"><img src="img/icons/compare_icon.png" alt="icons"></a></li>
-														<li><a href="wishlist.html"><img src="img/icons/wishlist_icon.png" alt="icons"></a></li>
-														<li><a title="Quick View" class="quickview" href="#"><img src="img/icons/quick_view.png" alt="icons"></a></li>
-													</ul>
-												</div>
-												<div class="content">
-													<h4><a href="single-product.html">Easin Glasses</a></h4>
-													<ul class="price">
-														<li>$35</li>
-														<li class="old-price">$35</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single Product -->
-									<!-- Start Single Product -->
-									<div class="col-lg-6 col-xl-4 col-sm-6 col-12">
-										<div class="product">
-											<div class="thumb">
-												<a href="single-product.html">
-													<img src="img/product/product-4.jpg" alt="product img">
-												</a>
-												<div class="product_action">
-													<h4><a href="single-product.html">Macro Melodi</a></h4>
-													<ul class="cart_action">
-														<li><a href="cart.html"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
-														<li><a href="#"><img src="img/icons/compare_icon.png" alt="icons"></a></li>
-														<li><a href="wishlist.html"><img src="img/icons/wishlist_icon.png" alt="icons"></a></li>
-														<li><a title="Quick View" class="quickview" href="#"><img src="img/icons/quick_view.png" alt="icons"></a></li>
-													</ul>
-												</div>
-												<div class="content">
-													<h4><a href="single-product.html">Macro Melodi</a></h4>
-													<ul class="price">
-														<li>$35</li>
-														<li class="old-price">$35</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single Product -->
-									<!-- Start Single Product -->
-									<div class="col-lg-6 col-xl-4 col-sm-6 col-12">
-										<div class="product">
-											<div class="thumb">
-												<a href="single-product.html">
-													<img src="img/product/product-5.jpg" alt="product img">
-												</a>
-												<div class="product_action">
-													<h4><a href="single-product.html">Movilark Raison</a></h4>
-													<ul class="cart_action">
-														<li><a href="cart.html"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
-														<li><a href="#"><img src="img/icons/compare_icon.png" alt="icons"></a></li>
-														<li><a href="wishlist.html"><img src="img/icons/wishlist_icon.png" alt="icons"></a></li>
-														<li><a title="Quick View" class="quickview" href="#"><img src="img/icons/quick_view.png" alt="icons"></a></li>
-													</ul>
-												</div>
-												<div class="content">
-													<h4><a href="single-product.html">Movilark Raison</a></h4>
-													<ul class="price">
-														<li>$35</li>
-														<li class="old-price">$45</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single Product -->
+
 									<!-- Start Single Product -->
 									<div class="col-lg-6 col-xl-4 col-sm-6 col-12">
 										<div class="product">
@@ -685,3 +594,123 @@
             </div>
         </div>
         <!-- End Shop Area -->
+
+
+
+<!-- Quick View Modal -->
+<div class="quick-view-modal">
+    <div class="quick-view-modal-inner">
+        <div class="container">
+            <div class="product-details">
+                <!-- Product Details Left -->
+                <div class="product-details-left">
+                    <div class="product-details-images slider-navigation-2">
+                        <a href="img/product/sm1.png">
+                            <img src="img/product/big-img.png" alt="product image">
+                        </a>
+                        <a href="img/product/sm2.png">
+                            <img src="img/product/big-img.png" alt="product image">
+                        </a>
+                        <a href="img/product/sm3.png">
+                            <img src="img/product/big-img.png" alt="product image">
+                        </a>
+                        <a href="img/product/sm1.png">
+                            <img src="img/product/big-img.png" alt="product image">
+                        </a>
+                        <a href="img/product/sm1.png">
+                            <img src="img/product/big-img.png" alt="product image">
+                        </a>
+                    </div>
+                    <div class="product-details-thumbs slider-navigation-2">
+                        <img src="img/product/sm1.png" alt="product image thumb">
+                        <img src="img/product/sm2.png" alt="product image thumb">
+                        <img src="img/product/sm3.png" alt="product image thumb">
+                        <img src="img/product/sm1.png" alt="product image thumb">
+                        <img src="img/product/sm1.png" alt="product image thumb">
+                    </div>
+                </div>
+                <!--// Product Details Left -->
+
+                <!-- Product Details Right -->
+                <div class="product-details-right">
+                    <h5 class="product-title">oculos</h5>
+
+                    <div class="ratting-stock-availbility">
+                        <div class="ratting-box">
+                            <span><i class="fa fa-star"></i></span>
+                            <span><i class="fa fa-star"></i></span>
+                            <span><i class="fa fa-star"></i></span>
+                            <span><i class="fa fa-star"></i></span>
+                            <span><i class="fa fa-star"></i></span>
+                        </div>
+                        <span class="stock-available">In stock</span>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est
+                        tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo
+                        gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.
+                        adipiscing cursus eu, suscipit id nulla.</p>
+
+                    <div class="price-box">
+                        <span class="pricebox-price">£80.00</span>
+                    </div>
+
+                    <div class="product-details-quantity">
+                        <div class="quantity-select">
+                            <div class="pro-quantity">
+                                <div class="pro-qty"><input type="text" value="1"></div>
+                            </div>
+                        </div>
+                        <a href="#" class="add-to-cart-button">
+                            <span>ADD TO CART</span>
+                        </a>
+                    </div>
+
+                    <div class="product-details-color">
+                        <span>Color :</span>
+                        <ul>
+                            <li class="red"><span></span></li>
+                            <li class="green checked"><span></span></li>
+                            <li class="blue"><span></span></li>
+                            <li class="black"><span></span></li>
+                        </ul>
+                    </div>
+
+                    
+
+                    <div class="product-details-categories">
+                        <span>Categories :</span>
+                        <ul>
+                            <li><a href="shop.html">Accessories</a></li>
+                            <li><a href="shop.html">Kids</a></li>
+                            <li><a href="shop.html">Women</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="product-details-tags">
+                        <span>Tags :</span>
+                        <ul>
+                            <li><a href="shop.html">Electronic</a></li>
+                            <li><a href="shop.html">Television</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="product-details-socialshare">
+                        <span>Share :</span>
+                        <ul>
+                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--// Product Details Right -->
+
+            </div>
+        </div>
+    </div>
+    <button class="close-quickview-modal"><i class="fa fa-close"></i></button>
+</div>
+<!--// Quick View Modal -->

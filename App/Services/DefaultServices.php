@@ -1,6 +1,8 @@
 <?php
 namespace App\Services;
 
+use Exception;
+
 class DefaultServices {
 
     static function deslogar()
@@ -21,6 +23,7 @@ class DefaultServices {
     }
 
     static function verificarLogin(){
+       
         try{
 
             if($_SESSION['logado'] == false){

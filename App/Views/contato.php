@@ -131,25 +131,6 @@
         <!-- Cart Overlay -->
         <div class="body_overlay"></div>
 
-        <!-- Start Bradcaump area -->
-        <div class="bradcaump_area bg_image--5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="bradcaump_inner text-center">
-                            <h2 class="bradcaump-title">Contato</h2>
-                            <nav class="bradcaump-content">
-                                <a class="breadcrumb_item" href="index.html">Home</a>
-                                <span class="brd-separetor">/</span>
-                                <span class="breadcrumb_item active">Contato</span>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Bradcaump area -->
-
         <!-- Start Contact Area -->
         <div class="contact_area section-ptb-xl">
             <div class="container">
@@ -157,12 +138,38 @@
                     <div class="col-lg-12">
                         <div class="gogle_map">
                             <div id="googleMap">
-                                        
+
+                                <div id="map">
+                                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSr8SFxD03BRdriVAXeemLLaB1iop7Tmk"></script>
+
+                                    <script>
+                                        function initMap() {
+                                            var location = {
+                                                lat: -22.7580828,
+                                                lng: -47.3831891
+                                            };
+                                            var map = new google.maps.Map(document.getElementById('map'), {
+                                                zoom: 15,
+                                                center: location
+                                            });
+
+                                            var marker = new google.maps.Marker({
+                                                position: location,
+                                                map: map
+                                            });
+                                        }
+                                        window.onload = initMap;
+                                    </script>
+                                </div>
+
+
+
+
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row pt--120">
+                <div class="row pt--120 pt--121">
                     <div class="col-lg-5 col-md-5 col-12">
                         <div class="contact_adress">
                             <div class="ct_address">

@@ -170,3 +170,24 @@
         max-width: 400px;
     }
 }
+
+
+.link-esqueci-senha{
+    color: rgb(0, 0, 0) !important;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-size: 0.85rem;
+}
+
+.link-cadastrar{
+    color: rgb(0, 0, 0) !important;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.link-text{
+    font-size: 0.85rem;
+    margin:auto;
+}
