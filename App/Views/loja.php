@@ -129,9 +129,8 @@ use App\Widgets\BaseWidget;
                                                         <h4><a href="single-product.html"><?= $produto->nome ?></a></h4>
                                                         <ul class="cart_action">
                                                             <li><a href="cart.html"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
-                                                            <li><a href="#"><img src="img/icons/compare_icon.png" alt="icons"></a></li>
                                                             <li><a href="wishlist.html"><img src="img/icons/wishlist_icon.png" alt="icons"></a></li>
-                                                            <li><a title="Quick View" class="quickview" href="#"><img src="img/icons/quick_view.png" alt="icons"></a></li>
+                                                            <li><a title="Quick View" href="individual/<?= $produto->id ?>"><img src="img/icons/quick_view.png" alt="icons"></a></li>
                                                         </ul>
                                                     </div>
                                                     <div class="content">

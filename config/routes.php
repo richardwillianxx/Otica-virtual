@@ -22,7 +22,8 @@ return function(RouteCollector $r) {
     $r->addRoute('POST', '/novousuario', [LoginController::class, 'novoUsuario']);
     $r->addRoute('POST', '/deslogar', [LoginController::class, 'deslogar']);
 
-    $r->addRoute('GET', '/individual', [ProdutoController::class, 'produtoIndividual']);
+    $r->addRoute('GET', '/individual/{id}', [ProdutoController::class, 'produtoIndividual']);
+    $r->addRoute('GET', '/individual/curtir/{id}', [ProdutoController::class, 'curtir']);
     $r->addRoute('GET', '/produtos', [ProdutoController::class, 'index']);
     $r->addRoute('GET', '/produtos/cadastro', [ProdutoController::class, 'formulario']);
     $r->addRoute('POST','/produtos/salvar[/{produto}]', [ProdutoController::class, 'salvar']);

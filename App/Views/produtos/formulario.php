@@ -1,5 +1,5 @@
-    <div class="containerCadProdutos">
-        <form method="post" action="<?= $produto?->id ? '/produtos/salvar/'.$produto?->id : '/produtos/salvar' ?>">
+<div class="containerCadProdutos">
+    <form method="post" action="<?= $produto?->id ? '/produtos/salvar/'.$produto?->id : '/produtos/salvar' ?>">
         <h4><?= $titulo ?></h4>
         <div class="form-groupCadProdutos">
             <label class="LabelCadProdutos" for="nome">Nome:</label>

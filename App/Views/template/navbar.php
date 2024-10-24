@@ -6,7 +6,7 @@
             <div class="row align-items-center">
                 <div class="col-xl-3 col-lg-2 col-4">
                     <div class="logo">
-                        <a href="index.html">
+                        <a href="/">
                             <img src="/img/logo/logoVV2.png" alt="chasmishco Logo">
                         </a>
                     </div>
@@ -54,16 +54,12 @@
                                     <li class="drop">
                                         <a >Paginas</a>
                                         <ul class="dropdown">
-                                            <li><a href="/">Home</a></li>
-                                            <li><a href="/cadastro">cadastro</a></li>
-                                            <li><a href="/login">login</a></li>
+
                                             <li><a href="/carrinho">carrinho</a></li>
-                                            <li><a href="/deslogar">deslogar</a></li>
                                             <li><a href="/pagamento">pagamento</a></li>
                                             <li><a href="/produtos">Produtos</a></li>
-                                            <li><a href="/individual">PeodutoSolo</a></li>
-                                            <li><a href="/estoques">EStoques    </a></li>
-                                            <li><a href="/clientes">clientes    </a></li>
+                                            <li><a href="/estoques">EStoques  </a></li>
+                                            <li><a href="/clientes">clientes </a></li>
                                             
                                         </ul>
                                     </li>
@@ -73,7 +69,7 @@
                                 </ul>
                             </nav>
 
-                            <div class="hamburger-box button mobile-toggle">
+                            <div class="hamburger-box button frenteMaxima mobile-toggle">
                                 <span class="mobile-toggle__icon"></span>
                             </div>
                         </div>

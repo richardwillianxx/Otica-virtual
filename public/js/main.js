@@ -245,12 +245,14 @@
     /*----------------------------------
         12. Testimonial Activation
     ------------------------------------*/
+
     $('.testimonial_activation').slick({
         infinite: true,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        prevArrow: $('.slick-prev'),
+        nextArrow: $('.slick-next')
     });
-
     /*----------------------------------
         13. Instagram Activation
     ------------------------------------*/
