@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="/css/login.css">
     <link rel="stylesheet" href="/css/cadastro.css">
 
+    <link rel="stylesheet" href="/css/listagem.css">
+
 
 </head>
 

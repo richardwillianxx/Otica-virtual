@@ -1,0 +1,133 @@
+
+#clientes-container,
+#produtos-container,
+#estoque-container{
+     min-height: 98vh;
+    padding-top: 50px;
+}
+
+
+
+
+
+/* Estilo para a tabela em formato padrão (telas maiores) */
+#estoqueTable,
+#clientesTable,
+#produtosTable {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#estoqueTable thead th,
+#clientesTable thead th,
+#produtosTable thead th {
+    font-size: 18px;
+    background: #f8f9fa;
+    color: #333;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+#estoqueTable tbody td,
+#clientesTable tbody td,
+#produtosTable tbody td {
+    padding: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+}
+
+#estoqueTable tbody tr:nth-of-type(odd),
+#clientesTable tbody tr:nth-of-type(odd),
+#produtosTable tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Botões de ação */
+#estoqueTable .btn,
+#clientesTable .btn,
+#produtosTable .btn {
+    padding: 5px 10px;
+    font-size: 14px;
+    margin: 2px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#estoqueTable .btn-info,
+#clientesTable .btn-info,
+#produtosTable .btn-info {
+    background-color: #17a2b8;
+    border-color: #202020;
+    color: white;
+}
+
+#estoqueTable .btn-danger,
+#clientesTable .btn-danger,
+#produtosTable .btn-danger {
+    background-color: #dc3545;
+    border-color: #202020;
+    color: white;
+}
+#estoque-card-header .btn-primary,
+#clientes-card-header .btn-primary,
+#produtos-card-header .btn-primary {
+    background: linear-gradient(45deg, #202020, #808080);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo responsivo para tabela vertical em telas pequenas */
+@media (max-width: 768px) {
+    #estoqueTable thead,
+    #clientesTable thead,
+    #produtosTable thead {
+        display: none; /* Esconde o cabeçalho da tabela */
+    }
+
+    #estoqueTable tbody tr,
+    #clientesTable tbody tr,
+    #produtosTable tbody tr {
+        display: block; /* Exibe cada linha como bloco */
+        margin-bottom: 20px; /* Espaço entre as linhas */
+    }
+
+    #estoqueTable tbody td,
+    #clientesTable tbody td,
+    #produtosTable tbody td {
+        display: block;
+        font-size: 14px;
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        border: none; /* Remove as bordas entre as células */
+    }
+
+    #estoqueTable tbody td:before,
+    #clientesTable tbody td:before,
+    #produtosTable tbody td:before {
+        content: attr(data-label); /* Usa o atributo data-label para exibir o rótulo da célula */
+        position: absolute;
+        left: 0;
+        width: 45%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+        color: #333;
+    }
+
+    /* Ajustes nos botões */
+    #estoqueTable .btn-info,
+    #clientesTable .btn-info,
+    #produtosTable .btn-info,
+    #estoqueTable .btn-danger,
+    #clientesTable .btn-danger,
+    #produtosTable .btn-danger {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
