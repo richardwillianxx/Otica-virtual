@@ -1,0 +1,67 @@
+
+#editar-estoque-container {
+    min-height: 88vh;
+    padding-top: 50px;
+}
+
+/* Centralização de texto */
+.centralizar {
+    text-align: center;
+}
+
+/* Estilo do Card */
+#editar-estoque-card {
+    box-shadow: 0 4px 8px white;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#editar-estoque-card-header {
+    background-color: rgb(243, 243, 243);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px 8px 0 0;
+    font-size: 18px;
+}
+
+/* Botão Principal */
+#editar-estoque-card-header {
+    color: rgb(242, 242, 242);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#salvar-estoque-btn {
+    background: linear-gradient(45deg, #202020, #808080);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#editar-estoque-card-header .btn-primary:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #202020, #808080);
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #editar-estoque-card-header {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .form-label {
+        font-size: 14px;
+    }
+
+    form button[type="submit"] {
+        width: 100%;
+    }
+}

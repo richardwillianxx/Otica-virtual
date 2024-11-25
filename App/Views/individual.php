@@ -116,6 +116,12 @@ use App\Widgets\BaseWidget;
                                     <div class="pro-quantity"><div class="pro-qty"><input type="text" value="99"></div></div>
                                 </div>
                             </div>
+                            <div>
+                            <button class="experimente" onclick="window.location.href='provador'">
+                                <img src="../../img/camera.png" class="camera" alt="Câmera">
+                                Experimentar
+                            </button>
+                            </div>
                             <div class="product_share">
                                 <span>Compartilhar:</span>
                                 <ul class="social_share">

@@ -27,14 +27,24 @@
                                          
                                         <button type="submit" name="sair" aria-label="Sair" class="bntLogOut"><img src="/img/icons/logout.svg" alt="Log Out"> </button></form></li>
 
-                                    <?php endif ?>
+                                    <?php endif;
+
+                                     $soma = 0;
+
+                                    $_SESSION['carrinho'] = $_SESSION['carrinho'] ?? [];
+
+                                     foreach ($_SESSION['carrinho'] as $unidade):
+                                             $soma += 1;
+                                     endforeach;
+
+                                    ?>
                                     
                                 </ul>
                             </div>
                             <div class="mini_cat_box">
                                 <div class="shop_cart_icon shop_trigger shopping_basket header-cart">
                                     <img src="/img/icons/icon.png" alt="icons">
-                                    <span class="shop_count">3</span>
+                                    <span class="shop_count"> <?= $soma??0 ?></span>
                                     <span class="cart_text"></span>
                                 </div>
                             </div>
@@ -56,7 +66,7 @@
                                         <ul class="dropdown">
 
                                             <li><a href="/carrinho">carrinho</a></li>
-                                            <li><a href="/pagamento">pagamento</a></li>
+                                            <li><a href="/favoritos">favoritos</a></li>
                                             <li><a href="/produtos">Produtos</a></li>
                                             <li><a href="/estoques">EStoques  </a></li>
                                             <li><a href="/clientes">clientes </a></li>
@@ -139,58 +149,48 @@
             </button>
         </div>
 
-        <!-- Mini Cart Products -->
+        <!-- FecharMini Cart Products -->
+
         <ul class="mini-cart-products">
+
+            <?php
+
+
+
+
+            foreach ($_SESSION['carrinho'] as $idProduto => $item) {
+                $total = $item['preco'] * $item['quantidade'];
+
+            ?>
+
+
             <li>
                 <a class="image">
-                    <img src="/img/product/product-1.jpg" alt="Product">
+                    <img src="<?= $item['foto'] ?>" alt="Product">
                 </a>
                 <div class="content">
-                    <a href="single-product.html" class="title">Simple Silacon Glasses</a>
-                    <span class="price">Price: $59</span>
-                    <span class="qty">Qty: 01</span>
+                    <a href="single-product.html" class="title"><?= htmlspecialchars($item['nome']); ?></a>
+                    <span class="price">R$<?= number_format($item['preco'], 2); ?></span>
+                    <span class="qty">Quantidade: <?= $item['quantidade']; ?></span>
                 </div>
                 <button class="remove">
-                    <i class="fa fa-trash-o"></i>
+                    <a href="/carrinho/remover/<?= $item['id']?>"><i class="fa fa-trash-o"></i></a>
                 </button>
             </li>
-            <li>
-                <a class="image">
-                    <img src="/img/product/product-2.jpg" alt="Product">
-                </a>
-                <div class="content">
-                    <a href="single-product.html" class="title">Simple Easin Glasses</a>
-                    <span class="price">Price: $20</span>
-                    <span class="qty">Qty: 02</span>
-                </div>
-                <button class="remove">
-                    <i class="fa fa-trash-o"></i>
-                </button>
-            </li>
-            <li>
-                <a class="image">
-                    <img src="/img/product/product-3.jpg" alt="Product">
-                </a>
-                <div class="content">
-                    <a href="single-product.html" class="title">Simple Macrox Glasses</a>
-                    <span class="price">Price: $320</span>
-                    <span class="qty">Qty: 03</span>
-                </div>
-                <button class="remove">
-                    <i class="fa fa-trash-o"></i>
-                </button>
-            </li>
+
+            <?php  } ?>
+
         </ul>
         <!-- Mini Cart Bottom -->
         <div class="mini-cart-bottom">
             <h4 class="sub-total">Total:
-                <span>$120</span>
+                <span><?= $_SESSION['total_carrinho'] ?? 0 ?></span>
             </h4>
             <div class="button">
-                <a href="checkout.html">CHECKOUT</a>
+                <a href="pagamento">FINALIZAR</a>
             </div>
         </div>
 
     </div>
-    <div class="body_overlay">rdgersgertgwe</div>
+    <div class="body_overlay">seila testeando da pra ver? se sim va mexer na navbar</div>
     <!--// Header -->   

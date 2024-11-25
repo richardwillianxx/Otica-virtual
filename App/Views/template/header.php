@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="/css/custom.css">
     <link rel="stylesheet" href="/css/login.css">
     <link rel="stylesheet" href="/css/cadastro.css">
+    <link rel="stylesheet" href="/css/editar-estoque.css">
+    <link rel="stylesheet" href="/css/camera.css">
 
     <link rel="stylesheet" href="/css/listagem.css">
 

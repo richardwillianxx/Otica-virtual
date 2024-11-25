@@ -16,7 +16,6 @@ use App\Widgets\BaseWidget;
  <div class="shop_area section-ptb-xl bg--white">
             <div class="container">
                 <div class="row">
-
                     <div class="col-lg-3 col-12 order-2 order-lg-1 sm-mt--30 md-mt--30">
                         <div class="shop_sidebar">
                             <!-- Start Single Wedget -->
@@ -34,7 +33,7 @@ use App\Widgets\BaseWidget;
                             <!-- Start Single Wedget -->
                             <div class="sidebar_widget widget_price_filter mb--60">
 								<h2 class="sidebar_title">Filter</h2>
-								
+
 
                                 <div class="sidebar_filter">
 									<div class="nstSlider" data-range_min="0" data-range_max="100" data-cur_min="10"    data-cur_max="80">
@@ -46,10 +45,7 @@ use App\Widgets\BaseWidget;
 									<div class="rightLabel"></div>
 
 								</div>
-								
 
-
-								
                             </div>
                             <!-- End Single Wedget -->
 
@@ -92,7 +88,7 @@ use App\Widgets\BaseWidget;
 
                         </div>
 					</div>
-					
+
                     <div class="col-lg-9 col-12 order-1 order-lg-2">
 						<div class="shop_product_area">
 							<div class="shop-bar-area">
@@ -123,18 +119,18 @@ use App\Widgets\BaseWidget;
                                             <div class="product">
                                                 <div class="thumb">
                                                     <a href="single-product.html">
-                                                        <img class="img-produto-thumb" src="<?= $produto->foto ?>" alt="product img">
+                                                        <img class="img-produto-thumb thumb-produtos" src="<?= $produto->foto ?>" alt="product img">
                                                     </a>
                                                     <div class="product_action">
                                                         <h4><a href="single-product.html"><?= $produto->nome ?></a></h4>
                                                         <ul class="cart_action">
-                                                            <li><a href="cart.html"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
-                                                            <li><a href="#"><img src="img/icons/compare_icon.png" alt="icons" ></a> </li>
-                                                            <li><a href="wishlist.html"><img src="img/icons/wishlist_icon.png" alt="icons"></a></li>
+                                                            <li><a href="carrinho/adicionar/<?= $produto->id ?>"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
+                                                            <li><a href="provador"><img src="img/icons/compare_icon.png" alt="icons" ></a> </li>
+                                                            <li><a href="curtir/<?= $produto->id  ?>"><img src="img/icons/wishlist_icon.png" alt="icons"></a></li>
                                                             <li><a title="Quick View" href="individual/<?= $produto->id ?>"><img src="img/icons/quick_view.png" alt="icons"></a></li>
                                                         </ul>
                                                     </div>
-l                                                     <div class="content">
+                                                     <div class="content">
                                                         <h4><a href="single-product.html"><?= $produto->nome ?></a></h4>
                                                         <ul class="price">
                                                             <li>R$<?= $produto->preco ?></li>
@@ -146,439 +142,36 @@ l                                                     <div class="content">
                                     <?php endforeach; ?>
 
 									<!-- End Single Product -->
-
-									<!-- Start Single Product -->
-									<div class="col-lg-6 col-xl-4 col-sm-6 col-12">
-										<div class="product">
-											<div class="thumb">
-												<a href="single-product.html">
-													<img src="img/product/product-6.jpg" alt="product img">
-												</a>
-												<div class="product_action">
-													<h4><a href="single-product.html">Oakley Glasses</a></h4>
-													<ul class="cart_action">
-														<li><a href="cart.html"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
-														<li><a href="#"><img src="img/icons/compare_icon.png" alt="icons"></a></li>
-														<li><a href="wishlist.html"><img src="img/icons/wishlist_icon.png" alt="icons"></a></li>
-														<li><a title="Quick View" class="quickview" href="#"><img src="img/icons/quick_view.png" alt="icons"></a></li>
-													</ul>
-												</div>
-												<div class="content">
-													<h4><a href="single-product.html">Oakley Glasses</a></h4>
-													<ul class="price">
-														<li>$35</li>
-														<li class="old-price">$35</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single Product -->
-									<!-- Start Single Product -->
-									<div class="col-lg-6 col-xl-4 col-sm-6 col-12">
-										<div class="product">
-											<div class="thumb">
-												<a href="single-product.html">
-													<img src="img/product/product-7.jpg" alt="product img">
-												</a>
-												<div class="product_action">
-													<h4><a href="single-product.html">Rinosin Glasses</a></h4>
-													<ul class="cart_action">
-														<li><a href="cart.html"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
-														<li><a href="#"><img src="img/icons/compare_icon.png" alt="icons"></a></li>
-														<li><a href="wishlist.html"><img src="img/icons/wishlist_icon.png" alt="icons"></a></li>
-														<li><a title="Quick View" class="quickview" href="#"><img src="img/icons/quick_view.png" alt="icons"></a></li>
-													</ul>
-												</div>
-												<div class="content">
-													<h4><a href="single-product.html">Rinosin Glasses</a></h4>
-													<ul class="price">
-														<li>$35</li>
-														<li class="old-price">$35</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single Product -->
-									<!-- Start Single Product -->
-									<div class="col-lg-6 col-xl-4 col-sm-6 col-12">
-										<div class="product">
-											<div class="thumb">
-												<a href="single-product.html">
-													<img src="img/product/product-8.jpg" alt="product img">
-												</a>
-												<div class="product_action">
-													<h4><a href="single-product.html">Oakley Glasses</a></h4>
-													<ul class="cart_action">
-														<li><a href="cart.html"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
-														<li><a href="#"><img src="img/icons/compare_icon.png" alt="icons"></a></li>
-														<li><a href="wishlist.html"><img src="img/icons/wishlist_icon.png" alt="icons"></a></li>
-														<li><a title="Quick View" class="quickview" href="#"><img src="img/icons/quick_view.png" alt="icons"></a></li>
-													</ul>
-												</div>
-												<div class="content">
-													<h4><a href="single-product.html">Oakley Glasses</a></h4>
-													<ul class="price">
-														<li>$35</li>
-														<li class="old-price">$35</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single Product -->
-									<!-- Start Single Product -->
-									<div class="col-lg-6 col-xl-4 col-sm-6 col-12">
-										<div class="product">
-											<div class="thumb">
-												<a href="single-product.html">
-													<img src="img/product/product-9.jpg" alt="product img">
-												</a>
-												<div class="product_action">
-													<h4><a href="single-product.html">Ray Bune</a></h4>
-													<ul class="cart_action">
-														<li><a href="cart.html"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
-														<li><a href="#"><img src="img/icons/compare_icon.png" alt="icons"></a></li>
-														<li><a href="wishlist.html"><img src="img/icons/wishlist_icon.png" alt="icons"></a></li>
-														<li><a title="Quick View" class="quickview" href="#"><img src="img/icons/quick_view.png" alt="icons"></a></li>
-													</ul>
-												</div>
-												<div class="content">
-													<h4><a href="single-product.html">Ray Bune</a></h4>
-													<ul class="price">
-														<li>$35</li>
-														<li class="old-price">$35</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single Product -->
-									<!-- Start Single Product -->
-									<div class="col-lg-6 col-xl-4 col-sm-6 col-12">
-										<div class="product">
-											<div class="thumb">
-												<a href="single-product.html">
-													<img src="img/product/product-10.jpg" alt="product img">
-												</a>
-												<div class="product_action">
-													<h4><a href="single-product.html">Rinosin Glasses</a></h4>
-													<ul class="cart_action">
-														<li><a href="cart.html"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
-														<li><a href="#"><img src="img/icons/compare_icon.png" alt="icons"></a></li>
-														<li><a href="wishlist.html"><img src="img/icons/wishlist_icon.png" alt="icons"></a></li>
-														<li><a title="Quick View" class="quickview" href="#"><img src="img/icons/quick_view.png" alt="icons"></a></li>
-													</ul>
-												</div>
-												<div class="content">
-													<h4><a href="single-product.html">Rinosin Glasses</a></h4>
-													<ul class="price">
-														<li>$35</li>
-														<li class="old-price">$35</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single Product -->
-									<!-- Start Single Product -->
-									<div class="col-lg-6 col-xl-4 col-sm-6 col-12">
-										<div class="product">
-											<div class="thumb">
-												<a href="single-product.html">
-													<img src="img/product/product-11.jpg" alt="product img">
-												</a>
-												<div class="product_action">
-													<h4><a href="single-product.html">Ray Bune</a></h4>
-													<ul class="cart_action">
-														<li><a href="cart.html"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
-														<li><a href="#"><img src="img/icons/compare_icon.png" alt="icons"></a></li>
-														<li><a href="wishlist.html"><img src="img/icons/wishlist_icon.png" alt="icons"></a></li>
-														<li><a title="Quick View" class="quickview" href="#"><img src="img/icons/quick_view.png" alt="icons"></a></li>
-													</ul>
-												</div>
-												<div class="content">
-													<h4><a href="single-product.html">Ray Bune</a></h4>
-													<ul class="price">
-														<li>$35</li>
-														<li class="old-price">$35</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single Product -->
-									<!-- Start Single Product -->
-									<div class="col-lg-6 col-xl-4 col-sm-6 col-12">
-										<div class="product">
-											<div class="thumb">
-												<a href="single-product.html">
-													<img src="img/product/product-12.jpg" alt="product img">
-												</a>
-												<div class="product_action">
-													<h4><a href="single-product.html">Rinosin Glasses</a></h4>
-													<ul class="cart_action">
-														<li><a href="cart.html"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
-														<li><a href="#"><img src="img/icons/compare_icon.png" alt="icons"></a></li>
-														<li><a href="wishlist.html"><img src="img/icons/wishlist_icon.png" alt="icons"></a></li>
-														<li><a title="Quick View" class="quickview" href="#"><img src="img/icons/quick_view.png" alt="icons"></a></li>
-													</ul>
-												</div>
-												<div class="content">
-													<h4><a href="single-product.html">Rinosin Glasses</a></h4>
-													<ul class="price">
-														<li>$35</li>
-														<li class="old-price">$35</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- End Single Product -->
 								</div>
-
 								<div class="row single_grid_product tab-pane fade" id="tab2" role="tabpanel">
+                                    <?php foreach($produtos as $produto): ?>
 									<!-- Start Single Product -->
 									<div class="col-12">
 										<div class="product_list">
 											<div class="product_list__thumb">
 												<a href="single-product.html">
-													<img src="img/product/list1.png" alt="product img">
+													<img src="<?= $produto->foto ?>" alt="product img">
 												</a>
 											</div>
 											<div class="product_list__content">
-												<h4><a href="single-product.html">Rinosin Glasses</a></h4>
+												<h4><a href="single-product.html"><?= $produto->nome ?></a></h4>
 												<ul class="price">
-													<li>$35</li>
-													<li class="old-price">$35</li>
+													<li>R$<?= $produto->preco ?></li>
+
 												</ul>
-												<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born</p>
-												<ul class="cart_action">
-													<li><a href="cart.html"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
-													<li><a href="#"><img src="img/icons/compare_icon.png" alt="icons"></a></li>
-													<li><a title="Quick View" class="quickview" href="#"><img src="img/icons/quick_view.png" alt="icons"></a></li>
-												</ul>
+												<p><?= $produto->descricao ?></p>
+                                                <ul class="cart_action">
+                                                    <li><a href="carrinho/adicionar/<?= $produto->id ?>"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
+                                                    <li><a href="provador"><img src="img/icons/compare_icon.png" alt="icons" ></a> </li>
+                                                    <li><a href="curtir/<?= $produto->id ?>"><img src="img/icons/wishlist_icon.png" alt="icons"></a></li>
+                                                    <li><a title="Quick View" href="individual/<?= $produto->id ?>"><img src="img/icons/quick_view.png" alt="icons"></a></li>
+                                                </ul>
 											</div>
 										</div>
 									</div>
 									<!-- End Single Product -->
-									<!-- Start Single Product -->
-									<div class="col-12">
-										<div class="product_list">
-											<div class="product_list__thumb">
-												<a href="single-product.html">
-													<img src="img/product/list2.png" alt="product img">
-												</a>
-											</div>
-											<div class="product_list__content">
-												<h4><a href="single-product.html">Easin Glasses</a></h4>
-												<ul class="price">
-													<li>$35</li>
-													<li class="old-price">$35</li>
-												</ul>
-												<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born</p>
-												<ul class="cart_action">
-													<li><a href="cart.html"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
-													<li><a href="#"><img src="img/icons/compare_icon.png" alt="icons"></a></li>
-													<li><a title="Quick View" class="quickview" href="#"><img src="img/icons/quick_view.png" alt="icons"></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<!-- End Single Product -->
-									<!-- Start Single Product -->
-									<div class="col-12">
-										<div class="product_list">
-											<div class="product_list__thumb">
-												<a href="single-product.html">
-													<img src="img/product/list3.png" alt="product img">
-												</a>
-											</div>
-											<div class="product_list__content">
-												<h4><a href="single-product.html">Macro Melodi</a></h4>
-												<ul class="price">
-													<li>$35</li>
-													<li class="old-price">$35</li>
-												</ul>
-												<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born</p>
-												<ul class="cart_action">
-													<li><a href="cart.html"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
-													<li><a href="#"><img src="img/icons/compare_icon.png" alt="icons"></a></li>
-													<li><a title="Quick View" class="quickview" href="#"><img src="img/icons/quick_view.png" alt="icons"></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<!-- End Single Product -->
-									<!-- Start Single Product -->
-									<div class="col-12">
-										<div class="product_list">
-											<div class="product_list__thumb">
-												<a href="single-product.html">
-													<img src="img/product/list4.png" alt="product img">
-												</a>
-											</div>
-											<div class="product_list__content">
-												<h4><a href="single-product.html">Movilark Raison</a></h4>
-												<ul class="price">
-													<li>$35</li>
-													<li class="old-price">$35</li>
-												</ul>
-												<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born</p>
-												<ul class="cart_action">
-													<li><a href="cart.html"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
-													<li><a href="#"><img src="img/icons/compare_icon.png" alt="icons"></a></li>
-													<li><a title="Quick View" class="quickview" href="#"><img src="img/icons/quick_view.png" alt="icons"></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<!-- End Single Product -->
-									<!-- Start Single Product -->
-									<div class="col-12">
-										<div class="product_list">
-											<div class="product_list__thumb">
-												<a href="single-product.html">
-													<img src="img/product/list5.png" alt="product img">
-												</a>
-											</div>
-											<div class="product_list__content">
-												<h4><a href="single-product.html">Movilark Raison</a></h4>
-												<ul class="price">
-													<li>$35</li>
-													<li class="old-price">$35</li>
-												</ul>
-												<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born</p>
-												<ul class="cart_action">
-													<li><a href="cart.html"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
-													<li><a href="#"><img src="img/icons/compare_icon.png" alt="icons"></a></li>
-													<li><a title="Quick View" class="quickview" href="#"><img src="img/icons/quick_view.png" alt="icons"></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<!-- End Single Product -->
-									<!-- Start Single Product -->
-									<div class="col-12">
-										<div class="product_list">
-											<div class="product_list__thumb">
-												<a href="single-product.html">
-													<img src="img/product/list6.png" alt="product img">
-												</a>
-											</div>
-											<div class="product_list__content">
-												<h4><a href="single-product.html">Oakley Glasses</a></h4>
-												<ul class="price">
-													<li>$35</li>
-													<li class="old-price">$35</li>
-												</ul>
-												<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born</p>
-												<ul class="cart_action">
-													<li><a href="cart.html"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
-													<li><a href="#"><img src="img/icons/compare_icon.png" alt="icons"></a></li>
-													<li><a title="Quick View" class="quickview" href="#"><img src="img/icons/quick_view.png" alt="icons"></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<!-- End Single Product -->
-									<!-- Start Single Product -->
-									<div class="col-12">
-										<div class="product_list">
-											<div class="product_list__thumb">
-												<a href="single-product.html">
-													<img src="img/product/list7.png" alt="product img">
-												</a>
-											</div>
-											<div class="product_list__content">
-												<h4><a href="single-product.html">Rinosin Glasses</a></h4>
-												<ul class="price">
-													<li>$35</li>
-													<li class="old-price">$35</li>
-												</ul>
-												<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born</p>
-												<ul class="cart_action">
-													<li><a href="cart.html"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
-													<li><a href="#"><img src="img/icons/compare_icon.png" alt="icons"></a></li>
-													<li><a title="Quick View" class="quickview" href="#"><img src="img/icons/quick_view.png" alt="icons"></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<!-- End Single Product -->
-									<!-- Start Single Product -->
-									<div class="col-12">
-										<div class="product_list">
-											<div class="product_list__thumb">
-												<a href="single-product.html">
-													<img src="img/product/list8.png" alt="product img">
-												</a>
-											</div>
-											<div class="product_list__content">
-												<h4><a href="single-product.html">Ray Bune</a></h4>
-												<ul class="price">
-													<li>$35</li>
-													<li class="old-price">$35</li>
-												</ul>
-												<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born</p>
-												<ul class="cart_action">
-													<li><a href="cart.html"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
-													<li><a href="#"><img src="img/icons/compare_icon.png" alt="icons"></a></li>
-													<li><a title="Quick View" class="quickview" href="#"><img src="img/icons/quick_view.png" alt="icons"></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<!-- End Single Product -->
-									<!-- Start Single Product -->
-									<div class="col-12">
-										<div class="product_list">
-											<div class="product_list__thumb">
-												<a href="single-product.html">
-													<img src="img/product/list9.png" alt="product img">
-												</a>
-											</div>
-											<div class="product_list__content">
-												<h4><a href="single-product.html">Ribsonchasmish</a></h4>
-												<ul class="price">
-													<li>$35</li>
-													<li class="old-price">$35</li>
-												</ul>
-												<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born</p>
-												<ul class="cart_action">
-													<li><a href="cart.html"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
-													<li><a href="#"><img src="img/icons/compare_icon.png" alt="icons"></a></li>
-													<li><a title="Quick View" class="quickview" href="#"><img src="img/icons/quick_view.png" alt="icons"></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<!-- End Single Product -->
-									<!-- Start Single Product -->
-									<div class="col-12">
-										<div class="product_list">
-											<div class="product_list__thumb">
-												<a href="single-product.html">
-													<img src="img/product/list1.png" alt="product img">
-												</a>
-											</div>
-											<div class="product_list__content">
-												<h4><a href="single-product.html">Rinosin Glasses</a></h4>
-												<ul class="price">
-													<li>$35</li>
-													<li class="old-price">$35</li>
-												</ul>
-												<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born</p>
-												<ul class="cart_action">
-													<li><a href="cart.html"><img src="img/icons/add_to_cart.png" alt="icons"></a></li>
-													<li><a href="#"><img src="img/icons/compare_icon.png" alt="icons"></a></li>
-													<li><a title="Quick View" class="quickview" href="#"><img src="img/icons/quick_view.png" alt="icons"></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<!-- End Single Product -->
+                                    <?php endforeach; ?>
+
 								</div>
 							</div>
 							<ul class="pagination_style">
@@ -588,9 +181,7 @@ l                                                     <div class="content">
 							</ul>
 						</div>
 					</div>
-
 				</div>
-				
             </div>
         </div>
         <!-- End Shop Area -->

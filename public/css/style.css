@@ -8231,7 +8231,19 @@ p.form-messege {
   padding-top: 10px !important;
 }
 
-.frenteMaxima{
-  z-index: 1 !important;
-  border: 2px red solid!important;
+.thumb-produtos {
+
+}
+
+.pro-qty input[type="number"] {
+  transform: scale(1.15);
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
+}
+
+.pro-qty input[type="number"]::-webkit-inner-spin-button,
+.pro-qty input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

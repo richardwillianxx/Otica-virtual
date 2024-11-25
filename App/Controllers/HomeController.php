@@ -8,8 +8,11 @@ use App\Models\Produto;
 class HomeController extends Controller {
 
     public function index() {
+        $produtos = Produto::all();
 
-        return require_once __DIR__ . '/../Views/home.php';
+        return $this->render('/../Views/home.php', [
+            'produtos' => $produtos
+        ]);
     }
 
     public function contato() {
@@ -35,6 +38,8 @@ class HomeController extends Controller {
     public function carrinho() {
 
         return require_once __DIR__ . '/../Views/carrinho.php';
+
+
     }
 
     public function pagamento() {

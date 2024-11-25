@@ -28,6 +28,16 @@ class ProdutoController extends Controller {
 
     }
 
+    public function favoritos() {
+
+        $produtos = Produto::where('curtido', '1')->get();
+
+        return $this->render('/../Views/favoritos.php', [
+            'produtos' => $produtos
+        ]);
+        // return require_once __DIR__ . '/../Views/loja.php';
+    }
+
   
     public function formulario($produto)
     {
